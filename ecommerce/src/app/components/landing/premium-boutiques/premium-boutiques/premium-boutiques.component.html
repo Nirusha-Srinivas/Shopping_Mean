@@ -1,0 +1,14 @@
+<!-- premium-boutiques.component.html -->
+<section class="premium-boutiques">
+  <div class="container">
+    <h2 class="section-title">PREMIUM BOUTIQUES</h2>
+    
+    <div class="boutiques-grid">
+      <a *ngFor="let card of boutiqueCards" 
+         [routerLink]="card.link"
+         class="boutique-card">
+        <img [src]="card.imageUrl" [alt]="card.title" class="card-image">
+      </a>
+    </div>
+  </div>
+</section>
